@@ -1,0 +1,1897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GetResto</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="icon" type="image/png" href="favicon.png" >
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="css/introLoader.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- <div id="element" class="introLoading"></div> -->
+	<header>
+		<div class="top-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-4 visible-xs">
+						<nav>
+							<div id="burger-container">
+								<div id="burger">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+						</nav>
+					</div>
+					<div class="col-lg-6 col-md-3 col-sm-3 col-xs-4">
+						<div>
+							<a href="index.html">
+								<img class="logo" src="img/logo.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-9 col-sm-9 col-xs-4">
+						<div>
+							<button class="registration hidden-xs" data-toggle="modal" data-target="#reg_Modal">Регистрация</button>
+							<button class="entry hidden-xs" data-toggle="modal" data-target="#enter_Modal">Вход</button>
+							<a href="modal-registration.html"><img class="hidden-lg hidden-md hidden-sm registr-hidden " src="img/user-1.png" alt=""></a>
+							<div class="language ">
+								<p class="main-lang"><img  src="img/russia-1.jpg.png" alt=""><span class="hidden-xs">Русский</span> <span class="caret hidden-xs"></span></p>
+								<ul class="menu-lang">
+									<li class="chosen"><a href=""><img src="img/russia.jpg" alt="">Русский</a></li>
+									<li><a href=""><img src="img/gr-britain.jpg" alt="">English</a></li>
+									<li><a href=""><img src="img/estonia.jpg" alt="">Eesti</a></li>
+									<li><a href=""><img src="img/finland.jpg" alt="">Suomi</a></li>
+									<li><a href=""><img src="img/latvia.jpg" alt="">Latvijas</a></li>
+									<li><a href=""><img src="img/sweden.jpg" alt="">Svenska</a></li>
+									<li><a href="http://www.w3schools.com/bootstrap/bootstrap_ref_comp_glyphs.asp"><img src="img/litva.jpg" alt="">Lietuvos</a></li>
+								</ul>
+							</div>
+							
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+			<ul class="menu-mobile col-xs-12">
+				<li><a href="">РЕСТОРАНЫ</a></li>
+				<li><a href="">ДОСТАВКА ЕДЫ</a></li>
+				<li><a href="">КНИГА ЖАЛОБ И ПРЕДЛОЖЕНИЙ</a></li>
+				<li><a href="">ОБЕДЫ</a></li>
+				<li><a href="">СПЕЦПРЕДЛОЖЕНИЯ</a></li>
+				<li><a href="">БЛЮДО ОТ ШЕФ ПОВАРА</a></li>
+				<li><a href="">ТОП 50</a></li>
+			</ul>
+		</div>
+		<div class="main-navigation hidden-xs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div>
+							<nav>
+								<ul>
+									<li><a href="">РЕСТОРАНЫ</a></li>
+									<li><a href="">ДОСТАВКА ЕДЫ</a></li>
+									<li><a href="">КНИГА ЖАЛОБ И ПРЕДЛОЖЕНИЙ</a></li>
+									<li><a href="">ОБЕДЫ</a></li>
+									<li><a href="">СПЕЦПРЕДЛОЖЕНИЯ</a></li>
+									<li><a href="">БЛЮДО ОТ ШЕФ ПОВАРА</a></li>
+									<li><a href="">ТОП 50</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Сотни ресторанов в одном месте, выбирай и заказывай!</h1>
+					</div>
+				</div>
+				<div class="row select-place">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="row">
+							<div class="col-md-6 col-sm-12">
+								<h3>Страна</h3>
+							</div>
+							<div class="col-md-6 col-sm-12">
+								<div class="country">
+									<div class="find-country ">
+										<p class="select-title-country"><span>Выберите страну</span> <img src="img/caret-select.png" alt="" class="caret-icon"></p>
+										<div class="scroll">
+											<ul>
+												<li>Россия</li>
+												<li>Украина</li>
+												<li>Польша</li>
+												<li>Италия </li>
+												<li>Испания</li>
+												<li>США</li>
+												<li>Словакия</li>
+												<li>Венгрия</li>
+												<li>Япония</li>
+												<li>Китай</li>
+												<li>Швеция</li>
+												<li>Хорватия</li>
+												<li>Турция</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="row">
+							<div class="col-md-2">
+								<h3 class="h3-city">Город</h3>
+							</div>
+							<div class="col-md-10">
+								<div class="city">
+									<div class="find-country ">
+										<p class="select-title-city"><span>Выберите город</span> <img src="img/caret-select.png" alt="" class="caret-icon"></p>
+										<div class="scroll">
+											<ul>
+												<li>Москва</li>
+												<li>Киев</li>
+												<li>Варшава</li>
+												<li>Рим </li>
+												<li>Мадрид</li>
+												<li>Вашингтон</li>
+												<li>Братислава</li>
+												<li>Будапешт</li>
+												<li>Токио</li>
+												<li>Пекин</li>
+												<li>Стокгольм</li>
+												<li>Загреб</li>
+												<li>Стамбул</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="step-block hidden-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 hidden-md hidden-sm">
+					<div>
+						<h3>Как это работает?</h3>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-4">
+					<div class="step-inner">
+						<div class="number-1">1</div>
+						<div class="text">
+							<p>Выберите ресторан</p>
+							<span>в котором Вы хотите провести время</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-4">
+					<div class="step-inner">
+						<div class="number-1">2</div>
+						<div class="text">
+							<p>Забронируйте</p>
+							<span>онлайн за пару кликов</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-4">
+					<div class="step-inner">
+						<div class="number-1">3</div>
+						<div class="text">
+							<p>Получите скидку</p>
+							<span>от общего счета в ресторане</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="pick hidden-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div>
+						<h3>РЕСТОРАНЫ</h3>
+					</div>
+				</div>
+			</div>
+			<div class="row choose-rest ">
+				<form action="">
+					<div class="col-lg-12">
+						<div class="people">
+							<h5>Кол-во персон</h5>
+							<p class="select-title"> <img class="users-icon" src="img/user.png" alt=""><span>2</span> <img src="img/caret-select.png" alt="" class="caret-icon"></p>
+							<div class="scroll">
+								<ul>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+									<li>6</li>
+									<li>7</li>
+									<li>8</li>
+								</ul>
+							</div>
+						</div>
+						<div class="date">
+							<h5>Дата</h5>
+							<input type="text" id="datepicker" class="form-control mydate" />
+						</div>
+						<div class="time">
+							<h5>Время</h5>
+							<p class="select-title-time"> 
+								<img class="users-icon" src="img/clock.png" alt="">
+								<span class="txt">11:00( скидка от 5 до 30% )</span>
+							</p>
+							<div class="scroll">
+								<ul>
+									<li>11:00( скидка от 5 до 35% )</li>
+									<li>14:00( скидка от 5 до 32% )</li>
+									<li>15:00( скидка от 5 до 25% )</li>
+									<li>16:00( скидка от 5 до 22% )</li>
+									<li>18:00( скидка от 5 до 20% )</li>
+									<li>20:00( скидка от 5 до 15% )</li>
+									<li>21:00( скидка от 5 до 12% )</li>
+									<li>22:00( скидка от 5 до 10% )</li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="filtr">
+							<i class="fa fa-times" aria-hidden="true"></i>
+							<h4>Cвернуть фильтр</h4>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<section class="expand-pick-kitchen hidden-xs">
+		<div class="container">
+			<div class="row">
+				<div class="choose-kitchen pop-up" >
+					<h4>Кухня</h4>
+					<span class="choose-kitchen-txt">Выберите кухню</span>
+				</div>
+				<div class="choose-kitchen pop-up" >
+					<h4>Тип и тематика</h4>
+					<span class="choose-kitchen-txt">Выберите тематику</span>
+				</div>
+				<div class="choose-kitchen pop-up" >
+					<h4>Особенности ресторана</h4>
+					<span class="choose-kitchen-txt">Выберите особенности</span>
+				</div>
+				<div class="choose-check pop-up" >
+					<h4>Средний чек</h4>
+					<span class="choose-kitchen-txt">20 - 80 &#8364;</span>
+				</div>
+				<button class="find hidden-sm">
+					найти
+				</button>
+			</div>
+		</div>
+		<div class="background-pop-up"></div>
+		<div class="popup">
+			<div class="popup-head">
+				<h1>Фильтр ресторанов</h1>
+				<img class="close-modal" src="img/close-modal.png" alt="">
+			</div>
+			<div class="popup-content">
+				<div class="scroll-popUp">
+					<div class="row">
+						<form action="">
+							<div class="col-lg-4">
+								<div>
+									<h2>Кухня</h2>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-ukraine" type="checkbox">
+										<label for="check-item-ukraine" class="checkbox">Украинская 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-europe" type="checkbox">
+										<label for="check-item-europe" class="checkbox">Европейская 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-russia" type="checkbox">
+										<label for="check-item-russia" class="checkbox">Русская 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-italy" type="checkbox">
+										<label for="check-item-italy" class="checkbox">Итальянская 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-japan" type="checkbox">
+										<label for="check-item-japan" class="checkbox">Японская 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-china" type="checkbox">
+										<label for="check-item-china" class="checkbox">Китайская 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-hungary" type="checkbox">
+										<label for="check-item-hungary" class="checkbox">Венгерская 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-caucas" type="checkbox">
+										<label for="check-item-caucas" class="checkbox">Кавказская 
+										</label>
+									</div>
+
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div>
+									<h2>Тип и тематика</h2>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-1" type="checkbox">
+										<label for="check-item-1" class="checkbox">Бары и пабы 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-2" type="checkbox">
+										<label for="check-item-2" class="checkbox">Винный клуб 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-3" type="checkbox">
+										<label for="check-item-3" class="checkbox">Mushrooms 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-4" type="checkbox">
+										<label for="check-item-4" class="checkbox">Фастфуд 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-5" type="checkbox">
+										<label for="check-item-5" class="checkbox">Бары и пабы 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-6" type="checkbox">
+										<label for="check-item-6" class="checkbox">Mushrooms 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-7" type="checkbox">
+										<label for="check-item-7" class="checkbox">Винный клуб 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-8" type="checkbox">
+										<label for="check-item-8" class="checkbox">Фастфуд  
+										</label>
+									</div>
+
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div>
+									<h2>Особенности ресторана</h2>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-pizza" type="checkbox">
+										<label for="check-item-pizza" class="checkbox">Пицца
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-grill" type="checkbox">
+										<label for="check-item-grill" class="checkbox">Гриль/Шашлык
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-fish" type="checkbox">
+										<label for="check-item-fish" class="checkbox">Рыба 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-meat" type="checkbox">
+										<label for="check-item-meat" class="checkbox">Мясные блюда 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-s" type="checkbox">
+										<label for="check-item-s" class="checkbox">Салаты
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-des" type="checkbox">
+										<label for="check-item-des" class="checkbox">Десерты 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-alco" type="checkbox">
+										<label for="check-item-alco" class="checkbox">Алкоголь
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="rng">
+									<p>
+										<label for="amount">Средний чек:</label>
+										<input type="text" id="amount" readonly>
+									</p>
+									<div id="slider-range"></div>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="submit-it">
+									<button class="find hidden-sm" type="submit">Подтвердить</button>
+								</div>
+							</div>
+						</form>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="rest-word visible-xs hidden-sm hidden-md hidden-lg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div>
+						<h3>РЕСТОРАНЫ</h3>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="btn-blocks">
+						<button class="search js-trigger"><i class="fa fa-search"></i></button>
+						<button class="parametrs"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="search-popup">
+						<div class="search-popup-area">
+							<input type="text" placeholder="Найти">
+							<button class="search-icon"><i class="fa fa-search"></i></button>
+						</div>
+						<button class="close"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container choose-popup-cont">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="choose-popup">
+						<h2>Кухня</h2>
+						<div class="checkboxes-kitchen">
+							<input id="check-item-ukraine" type="checkbox">
+							<label for="check-item-ukraine" class="checkbox">Украинская 
+							</label>
+						</div>
+						<div class="checkboxes-kitchen">
+							<input id="check-item-europe" type="checkbox">
+							<label for="check-item-europe" class="checkbox">Европейская 
+							</label>
+						</div>
+						<div class="checkboxes-kitchen">
+							<input id="check-item-russia" type="checkbox">
+							<label for="check-item-russia" class="checkbox">Русская 
+							</label>
+						</div>
+						<div class="checkboxes-kitchen">
+							<input id="check-item-italy" type="checkbox">
+							<label for="check-item-italy" class="checkbox">Итальянская 
+							</label>
+						</div>
+						<div class="checkboxes-kitchen">
+							<input id="check-item-japan" type="checkbox">
+							<label for="check-item-japan" class="checkbox">Японская 
+							</label>
+						</div>
+						<div class="checkboxes-kitchen">
+							<input id="check-item-china" type="checkbox">
+							<label for="check-item-china" class="checkbox">Китайская 
+							</label>
+						</div>
+						<div class="checkboxes-kitchen">
+							<input id="check-item-hungary" type="checkbox">
+							<label for="check-item-hungary" class="checkbox">Венгерская 
+							</label>
+						</div>
+						<div class="checkboxes-kitchen">
+							<input id="check-item-caucas" type="checkbox">
+							<label for="check-item-caucas" class="checkbox">Кавказская 
+							</label>
+						</div>
+						<div class="checkboxes-kitchen hidden-kitchen-js">
+							<input id="check-item-hungary" type="checkbox">
+							<label for="check-item-hungary" class="checkbox">Французская 
+							</label>
+						</div>
+						<div class="checkboxes-kitchen hidden-kitchen-js">
+							<input id="check-item-caucas" type="checkbox">
+							<label for="check-item-caucas" class="checkbox">Украинская 
+							</label>
+						</div>
+						<p class="show-content">Показать все<span class="caret"></span></p>
+						<h2>Тип и тематика</h2>
+						<div class="checkboxes-kitchen">
+							<input id="check-item-1" type="checkbox">
+							<label for="check-item-1" class="checkbox">Бары и пабы 
+							</label>
+						</div>
+						<div class="checkboxes-kitchen">
+							<input id="check-item-2" type="checkbox">
+							<label for="check-item-2" class="checkbox">Винный клуб 
+							</label>
+						</div>
+						<div class="checkboxes-kitchen">
+							<input id="check-item-3" type="checkbox">
+							<label for="check-item-3" class="checkbox">Mushrooms 
+							</label>
+						</div>
+						<div class="checkboxes-kitchen">
+							<input id="check-item-4" type="checkbox">
+							<label for="check-item-4" class="checkbox">Фастфуд 
+							</label>
+						</div>
+						<div class="checkboxes-kitchen">
+							<input id="check-item-5" type="checkbox">
+							<label for="check-item-5" class="checkbox">Бары и пабы 
+							</label>
+						</div>
+						<div class="checkboxes-kitchen">
+							<input id="check-item-6" type="checkbox">
+							<label for="check-item-6" class="checkbox">Mushrooms 
+							</label>
+						</div>
+						<div class="checkboxes-kitchen">
+							<input id="check-item-7" type="checkbox">
+							<label for="check-item-7" class="checkbox">Винный клуб 
+							</label>
+						</div>
+						<div class="checkboxes-kitchen">
+							<input id="check-item-8" type="checkbox">
+							<label for="check-item-8" class="checkbox">Фастфуд  
+							</label>
+						</div>
+						<div class="checkboxes-kitchen hidden-kitchen-js-2">
+							<input id="check-item-1" type="checkbox">
+							<label for="check-item-1" class="checkbox">Бары и пабы 
+							</label>
+						</div>
+						<div class="checkboxes-kitchen hidden-kitchen-js-2">
+							<input id="check-item-2" type="checkbox">
+							<label for="check-item-2" class="checkbox">Винный клуб 
+							</label>
+						</div>
+						<p class="show-content-2">Показать все<span class="caret"></span></p>
+						<h2>Особенности ресторана</h2>
+						<div class="checkboxes-kitchen">
+							<input id="check-item-pizza" type="checkbox">
+							<label for="check-item-pizza" class="checkbox">Пицца
+							</label>
+						</div>
+						<div class="checkboxes-kitchen">
+							<input id="check-item-grill" type="checkbox">
+							<label for="check-item-grill" class="checkbox">Гриль/Шашлык
+							</label>
+						</div>
+						<div class="checkboxes-kitchen">
+							<input id="check-item-fish" type="checkbox">
+							<label for="check-item-fish" class="checkbox">Рыба 
+							</label>
+						</div>
+						<div class="checkboxes-kitchen">
+							<input id="check-item-meat" type="checkbox">
+							<label for="check-item-meat" class="checkbox">Мясные блюда 
+							</label>
+						</div>
+						<div class="checkboxes-kitchen">
+							<input id="check-item-s" type="checkbox">
+							<label for="check-item-s" class="checkbox">Салаты
+							</label>
+						</div>
+						<div class="checkboxes-kitchen">
+							<input id="check-item-des" type="checkbox">
+							<label for="check-item-des" class="checkbox">Десерты 
+							</label>
+						</div>
+						<div class="checkboxes-kitchen">
+							<input id="check-item-alco" type="checkbox">
+							<label for="check-item-alco" class="checkbox">Алкоголь
+							</label>
+						</div>
+						<div class="checkboxes-kitchen hidden-kitchen-js-3">
+							<input id="check-item-1" type="checkbox">
+							<label for="check-item-1" class="checkbox">Рыба
+							</label>
+						</div>
+						<div class="checkboxes-kitchen hidden-kitchen-js-3">
+							<input id="check-item-2" type="checkbox">
+							<label for="check-item-2" class="checkbox">Мясные блюда
+							</label>
+						</div>
+						<p class="show-content-3">Показать все<span class="caret"></span></p>
+						<div class="rng">
+							<label for="amount">Средний чек:</label>
+							<div class="selecteurPrix">
+								<div class="PrixMin">0 €</div>
+								<div class="range-slider">
+									<input class="input-range" type="range" value="20" min="1" max="200">
+									<div class="valeurPrix">
+										<span class="range-value"></span>
+									</div>
+								</div>    
+								<div class="PrixMin">200 €</div>
+							</div>
+						</div>
+						<button class="find">Найти</button>
+						<button class="close"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="order">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-6 hidden-xs mb-28">
+					<div class="order-block">
+						<img src="img/restaurant-1.jpg" alt="">
+						<div class="sale">-40%</div>
+						<div class="recommend">GETRESTO РЕКОМЕНДУЕТ <i class="fa fa-thumbs-o-up"></i></div>
+						<div class="name">
+							<a href="#" class="heart-icon"></a>
+							<span>Якитория</span>
+							<div class="star-rating">
+								<div class="star-rating__wrap">
+									<input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="order-block-info">
+						<a href="#" class="address">Ул. Карла Маркса 144а</a>
+						<div class="new">new</div>
+						<div class="option">
+							<p>Кухня: Бургеры / Американская / Русская / Европейская / Японская / Французская</p>
+						</div>
+						<div class="average-check">
+							<p>Средний чек: 700 &#8381;</p>
+						</div>
+						<div class="activity">
+							<a href="#" class="participants">426</a>
+							<a href="#" class="visitors">87</a>
+							<a href="#" class="book">Забронировать</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 hidden-xs mb-28">
+					<div class="order-block">
+						<img src="img/restaurant-1.jpg" alt="" class="img-responsive">
+						<div class="sale">-40%</div>
+						<div class="recommend">GETRESTO РЕКОМЕНДУЕТ <i class="fa fa-thumbs-o-up"></i></div>
+						<div class="name">
+							<a href="#" class="heart-icon"></a>
+							<span>Якитория</span>
+							<div class="star-rating">
+								<div class="star-rating__wrap">
+									<input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="order-block-info">
+						<a href="#" class="address">Ул. Карла Маркса 144а</a>
+						<div class="new">new</div>
+						<div class="option">
+							<p>Кухня: Бургеры / Американская / Русская / Европейская / Японская / Французская</p>
+						</div>
+						<div class="average-check">
+							<p>Средний чек: 700 &#8381;</p>
+						</div>
+						<div class="activity">
+							<a href="#" class="participants">426</a>
+							<a href="#" class="visitors">87</a>
+							<a href="#" class="book">Забронировать</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 hidden-xs mb-28">
+					<div class="order-block">
+						<img src="img/restaurant-1.jpg" alt="" class="img-responsive">
+						<div class="sale">-40%</div>
+						<div class="recommend">GETRESTO РЕКОМЕНДУЕТ <i class="fa fa-thumbs-o-up"></i></div>
+						<div class="name">
+							<a href="#" class="heart-icon"></a>
+							<span>Якитория</span>
+							<div class="star-rating">
+								<div class="star-rating__wrap">
+									<input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="order-block-info">
+						<a href="#" class="address">Ул. Карла Маркса 144а</a>
+						<div class="new">new</div>
+						<div class="option">
+							<p>Кухня: Бургеры / Американская / Русская / Европейская / Японская / Французская</p>
+						</div>
+						<div class="average-check">
+							<p>Средний чек: 700 &#8381;</p>
+						</div>
+						<div class="activity">
+							<a href="#" class="participants">426</a>
+							<a href="#" class="visitors">87</a>
+							<a href="#" class="book">Забронировать</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 hidden-xs">
+					<div class="order-block">
+						<img src="img/restaurant-1.jpg" alt="" class="img-responsive">
+						<div class="sale">-40%</div>
+						<div class="recommend">GETRESTO РЕКОМЕНДУЕТ <i class="fa fa-thumbs-o-up"></i></div>
+						<div class="name">
+							<a href="#" class="heart-icon"></a>
+							<span>Якитория</span>
+							<div class="star-rating">
+								<div class="star-rating__wrap">
+									<input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="order-block-info">
+						<a href="#" class="address">Ул. Карла Маркса 144а</a>
+						<div class="new">new</div>
+						<div class="option">
+							<p>Кухня: Бургеры / Американская / Русская / Европейская / Японская / Французская</p>
+						</div>
+						<div class="average-check">
+							<p>Средний чек: 700 &#8381;</p>
+						</div>
+						<div class="activity">
+							<a href="#" class="participants">426</a>
+							<a href="#" class="visitors">87</a>
+							<a href="#" class="book">Забронировать</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 hidden-md hidden-sm hidden-xs">
+					<div class="order-block">
+						<img src="img/restaurant-1.jpg" alt="" class="img-responsive">
+						<div class="sale">-40%</div>
+						<div class="recommend">GETRESTO РЕКОМЕНДУЕТ <i class="fa fa-thumbs-o-up"></i></div>
+						<div class="name">
+							<a href="#" class="heart-icon"></a>
+							<span>Якитория</span>
+							<div class="star-rating">
+								<div class="star-rating__wrap">
+									<input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="order-block-info">
+						<a href="#" class="address">Ул. Карла Маркса 144а</a>
+						<div class="new">new</div>
+						<div class="option">
+							<p>Кухня: Бургеры / Американская / Русская / Европейская / Японская / Французская</p>
+						</div>
+						<div class="average-check">
+							<p>Средний чек: 700 &#8381;</p>
+						</div>
+						<div class="activity">
+							<a href="#" class="participants">426</a>
+							<a href="#" class="visitors">87</a>
+							<a href="#" class="book">Забронировать</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 hidden-md hidden-sm col-xs-12">
+					<div class="order-block">
+						<img src="img/restaurant-1.jpg" alt="" class="img-responsive">
+						<div class="sale">-40%</div>
+						<div class="recommend">GETRESTO РЕКОМЕНДУЕТ <i class="fa fa-thumbs-o-up"></i></div>
+						<div class="name">
+							<a href="#" class="heart-icon"></a>
+							<span>Якитория</span>
+							<div class="star-rating">
+								<div class="star-rating__wrap">
+									<input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="order-block-info">
+						<a href="#" class="address">Ул. Карла Маркса 144а</a>
+						<div class="new">new</div>
+						<div class="option">
+							<p>Кухня: Бургеры / Американская / Русская / Европейская / Японская / Французская</p>
+						</div>
+						<div class="average-check">
+							<p>Средний чек: 700 &#8381;</p>
+						</div>
+						<div class="activity">
+							<a href="#" class="participants">426</a>
+							<a href="#" class="visitors">87</a>
+							<a href="#" class="book">Забронировать</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="show-more-order">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<a href="#" class="show-all">
+						<i class="fa fa-chevron-down"></i>
+						ПОКАЗАТЬ ВСЕ
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="step2-block hidden-xs">
+		<div class="container">
+			<div class="row">
+				<div class="howItWorks">
+					<h2>Как это работает?</h2>
+				</div>
+				<div class="step-inner">
+					<div class="number-1">1</div>
+					<div class="text">
+						<p>Выберите ресторан</p>
+						<span>в котором Вы хотите провести время</span>
+					</div>
+				</div>
+				<div class="step-inner">
+					<div class="number-1">2</div>
+					<div class="text">
+						<p>Подтвердите заказ</p>
+						<span>за пару кликов</span>
+					</div>
+				</div>
+				<div class="step-inner">
+					<div class="number-1">3</div>
+					<div class="text">
+						<p>Забронируйте</p>
+						<span>онлайн за пару кликов</span>
+					</div>
+				</div>
+				<div class="step-inner">
+					<div class="number-1">4</div>
+					<div class="text">
+						<p>Получите скидку</p>
+						<span>от общего счета в ресторане</span>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	<section class="expand-pick-kitchen hidden-xs">
+		<div class="container">
+			<h3 class="deli">ДОСТАВКА ЕДЫ</h3>
+			<div class="row">
+				<div class="choose-kitchen pop-up" >
+					<h4>Кухня</h4>
+					<span class="choose-kitchen-txt">Выберите кухню</span>
+				</div>
+				<div class="choose-kitchen pop-up" >
+					<h4>Тип и тематика</h4>
+					<span class="choose-kitchen-txt">Выберите тематику</span>
+				</div>
+				<div class="choose-kitchen pop-up" >
+					<h4>Особенности ресторана</h4>
+					<span class="choose-kitchen-txt">Выберите особенности</span>
+				</div>
+				<div class="choose-check pop-up" >
+					<h4>Средний чек</h4>
+					<span class="choose-kitchen-txt">20 - 80 &#8364;</span>
+				</div>
+				<button class="find hidden-sm">
+					найти
+				</button>
+			</div>
+		</div>
+		<div class="background-pop-up"></div>
+		<div class="popup">
+			<div class="popup-head">
+				<h1>Фильтр ресторанов</h1>
+				<img class="close-modal" src="img/close-modal.png" alt="">
+			</div>
+			<div class="popup-content">
+				<div class="scroll-popUp">
+					<div class="row">
+						<form action="">
+							<div class="col-lg-4">
+								<div>
+									<h2>Кухня</h2>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-ukraine" type="checkbox">
+										<label for="check-item-ukraine" class="checkbox">Украинская 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-europe" type="checkbox">
+										<label for="check-item-europe" class="checkbox">Европейская 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-russia" type="checkbox">
+										<label for="check-item-russia" class="checkbox">Русская 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-italy" type="checkbox">
+										<label for="check-item-italy" class="checkbox">Итальянская 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-japan" type="checkbox">
+										<label for="check-item-japan" class="checkbox">Японская 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-china" type="checkbox">
+										<label for="check-item-china" class="checkbox">Китайская 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-hungary" type="checkbox">
+										<label for="check-item-hungary" class="checkbox">Венгерская 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-caucas" type="checkbox">
+										<label for="check-item-caucas" class="checkbox">Кавказская 
+										</label>
+									</div>
+
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div>
+									<h2>Тип и тематика</h2>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-1" type="checkbox">
+										<label for="check-item-1" class="checkbox">Бары и пабы 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-2" type="checkbox">
+										<label for="check-item-2" class="checkbox">Винный клуб 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-3" type="checkbox">
+										<label for="check-item-3" class="checkbox">Mushrooms 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-4" type="checkbox">
+										<label for="check-item-4" class="checkbox">Фастфуд 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-5" type="checkbox">
+										<label for="check-item-5" class="checkbox">Бары и пабы 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-6" type="checkbox">
+										<label for="check-item-6" class="checkbox">Mushrooms 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-7" type="checkbox">
+										<label for="check-item-7" class="checkbox">Винный клуб 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-8" type="checkbox">
+										<label for="check-item-8" class="checkbox">Фастфуд  
+										</label>
+									</div>
+
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div>
+									<h2>Особенности ресторана</h2>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-pizza" type="checkbox">
+										<label for="check-item-pizza" class="checkbox">Пицца
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-grill" type="checkbox">
+										<label for="check-item-grill" class="checkbox">Гриль/Шашлык
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-fish" type="checkbox">
+										<label for="check-item-fish" class="checkbox">Рыба 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-meat" type="checkbox">
+										<label for="check-item-meat" class="checkbox">Мясные блюда 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-s" type="checkbox">
+										<label for="check-item-s" class="checkbox">Салаты
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-des" type="checkbox">
+										<label for="check-item-des" class="checkbox">Десерты 
+										</label>
+									</div>
+									<div class="checkboxes-kitchen">
+										<input id="check-item-alco" type="checkbox">
+										<label for="check-item-alco" class="checkbox">Алкоголь
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="rng">
+									<label for="amount">Средний чек:</label>
+									<div class="selecteurPrix">
+										<div class="PrixMin">0 €</div>
+										<div class="range-slider">
+											<input class="input-range" type="range" value="20" min="1" max="200">
+											<div class="valeurPrix">
+												<span class="range-value"></span>
+											</div>
+										</div>    
+										<div class="PrixMin">200 €</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="submit-it">
+									<button class="find hidden-sm" type="submit">Подтвердить</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="order-2">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-6 hidden-xs">
+					<div class="order-block">
+						<img src="img/restaurant-2.jpg" alt="" class="img-responsive">
+						<div class="sale">-40%</div>
+						<div class="name">
+							<a href="#" class="heart-icon"></a>
+							<span>Якитория</span>
+							<div class="star-rating">
+								<div class="star-rating__wrap">
+									<input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="order-block-info">
+						<a href="#" class="address">Ул. Карла Маркса 144а</a>
+						<div class="new">new</div>
+						<div class="average-check">
+							<p>Кухня: Бургеры / Американская / Русская</p>
+							<p>Стоимость доставки: <span>2.50 - 4€</span></p>
+							<p>Средний чек: <span>25 - 40€</span></p>
+						</div>
+						<div class="activity">
+							<a href="#" class="participants">565</a>
+							<a href="#" class="visitors">165</a>
+							<a href="#" class="book">Заказать</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 hidden-xs">
+					<div class="order-block">
+						<img src="img/restaurant-3.jpg" alt="" class="img-responsive">
+						<div class="sale">-40%</div>
+						<div class="name">
+							<a href="#" class="heart-icon"></a>
+							<span>Якитория</span>
+							<div class="star-rating">
+								<div class="star-rating__wrap">
+									<input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="order-block-info">
+						<a href="#" class="address">Ул. Карла Маркса 144а</a>
+						<div class="new">new</div>
+						<div class="average-check">
+							<p>Кухня: Бургеры / Американская / Русская</p>
+							<p>Стоимость доставки: <span>2.50 - 4€</span></p>
+							<p>Средний чек: <span>25 - 40€</span></p>
+						</div>
+						<div class="activity">
+							<a href="#" class="participants">565</a>
+							<a href="#" class="visitors">165</a>
+							<a href="#" class="book">Заказать</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 hidden-xs">
+					<div class="order-block">
+						<img src="img/restaurant-4.jpg" alt="" class="img-responsive">
+						<div class="sale">-40%</div>
+						<div class="name">
+							<a href="#" class="heart-icon"></a>
+							<span>Якитория</span>
+							<div class="star-rating">
+								<div class="star-rating__wrap">
+									<input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="order-block-info">
+						<a href="#" class="address">Ул. Карла Маркса 144а</a>
+						<div class="new">new</div>
+						<div class="average-check">
+							<p>Кухня: Бургеры / Американская / Русская</p>
+							<p>Стоимость доставки: <span>2.50 - 4€</span></p>
+							<p>Средний чек: <span>25 - 40€</span></p>
+						</div>
+						<div class="activity">
+							<a href="#" class="participants">565</a>
+							<a href="#" class="visitors">165</a>
+							<a href="#" class="book">Заказать</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 hidden-xs">
+					<div class="order-block">
+						<img src="img/restaurant-5.jpg" alt="" class="img-responsive">
+						<div class="sale">-40%</div>
+						<div class="name">
+							<a href="#" class="heart-icon"></a>
+							<span>Якитория</span>
+							<div class="star-rating">
+								<div class="star-rating__wrap">
+									<input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="order-block-info">
+						<a href="#" class="address">Ул. Карла Маркса 144а</a>
+						<div class="new">new</div>
+						<div class="average-check">
+							<p>Кухня: Бургеры / Американская / Русская</p>
+							<p>Стоимость доставки: <span>2.50 - 4€</span></p>
+							<p>Средний чек: <span>25 - 40€</span></p>
+						</div>
+						<div class="activity">
+							<a href="#" class="participants">565</a>
+							<a href="#" class="visitors">165</a>
+							<a href="#" class="book">Заказать</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 hidden-xs">
+					<div class="order-block">
+						<img src="img/restaurant-6.jpg" alt="" class="img-responsive">
+						<div class="sale">-40%</div>
+						<div class="name">
+							<a href="#" class="heart-icon"></a>
+							<span>Якитория</span>
+							<div class="star-rating">
+								<div class="star-rating__wrap">
+									<input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="order-block-info">
+						<a href="#" class="address">Ул. Карла Маркса 144а</a>
+						<div class="new">new</div>
+						<div class="average-check">
+							<p>Кухня: Бургеры / Американская / Русская</p>
+							<p>Стоимость доставки: <span>2.50 - 4€</span></p>
+							<p>Средний чек: <span>25 - 40€</span></p>
+						</div>
+						<div class="activity">
+							<a href="#" class="participants">565</a>
+							<a href="#" class="visitors">165</a>
+							<a href="#" class="book">Заказать</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<div class="order-block">
+						<img src="img/restaurant-7.jpg" alt="" class="img-responsive">
+						<div class="sale">-40%</div>
+						<div class="name">
+							<a href="#" class="heart-icon"></a>
+							<span>Якитория</span>
+							<div class="star-rating">
+								<div class="star-rating__wrap">
+									<input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="order-block-info">
+						<a href="#" class="address">Ул. Карла Маркса 144а</a>
+						<div class="new">new</div>
+						<div class="average-check">
+							<p>Кухня: Бургеры / Американская / Русская</p>
+							<p>Стоимость доставки: <span>2.50 - 4€</span></p>
+							<p>Средний чек: <span>25 - 40€</span></p>
+						</div>
+						<div class="activity">
+							<a href="#" class="participants">565</a>
+							<a href="#" class="visitors">165</a>
+							<a href="#" class="book">Заказать</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="show-more-order">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<a href="#" class="show-all">
+						<i class="fa fa-chevron-down"></i>
+						ПОКАЗАТЬ ВСЕ
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="catalogs">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h2>Бронируй столики, заказывай еду и получай подарки</h2>
+					<a href="#">КАТАЛОГ БОНУСОВ</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="special-proposal">
+		<div class="container">
+			<h3>СПЕЦПРЕДЛОЖЕНИЯ</h3>
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-6 hidden-xs">
+					<div class="inner-box">
+						<div class="restaurant-name">
+							<img src="img/pizza.jpg" alt="">
+							<div class="txt">
+								Скидка 20% на всю итальянскую кухню
+							</div>
+						</div>
+						<div class="info">
+							<p>При заказе от 1000 рублей морс (0,5мл) в подарок! Вкус на выбор! При заказе от 1999 руб мы подарим Вам Ролл Яки кунсей маки или Пиццу Маргарита на выбор!</p>
+							<span>Якитория</span>
+							<a href="">СМОТРЕТЬ</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 hidden-xs">
+					<div class="inner-box">
+						<div class="restaurant-name">
+							<img src="img/pizza.jpg" alt="">
+							<div class="txt">
+								Скидка 20% на всю итальянскую кухню
+							</div>
+						</div>
+						<div class="info">
+							<p>При заказе от 1000 рублей морс (0,5мл) в подарок! Вкус на выбор! При заказе от 1999 руб мы подарим Вам Ролл Яки кунсей маки или Пиццу Маргарита на выбор!</p>
+							<span>Якитория</span>
+							<a href="">СМОТРЕТЬ</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 hidden-sm">
+					<div class="inner-box">
+						<div class="restaurant-name">
+							<img src="img/pizza.jpg" alt="">
+							<div class="txt">
+								Скидка 20% на всю итальянскую кухню
+							</div>
+						</div>
+						<div class="info">
+							<p>При заказе от 1000 рублей морс (0,5мл) в подарок! Вкус на выбор! При заказе от 1999 руб мы подарим Вам Ролл Яки кунсей маки или Пиццу Маргарита на выбор!</p>
+							<span>Якитория</span>
+							<a href="">СМОТРЕТЬ</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="show-more-order">
+				<a href="#" class="show-all">
+					<i class="fa fa-chevron-down"></i>
+					ПОКАЗАТЬ ВСЕ
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="food-in-office">
+		<div class="container">
+			<h3>КОМПЛЕКСНЫЕ ОБЕДЫ В ОФИС</h3>
+			<div class="row slider-main">
+				<div class="col-lg-4">
+					<div class="slide-inner">
+						<img src="img/restaurants-menu-3.jpg" alt="">
+						<div class="price">2.50 - 4 €</div>
+						<div class="day">22 ЯНВ СБ</div>
+						<h4>Якитория</h4>
+						<div class="composed">В меню: 1. Свекольный суп;  2. Строганов;  3. Компот;  4. Салат цезарь</div>
+						<div class="time">Время: 12:00 - 14:00</div>
+						<a href="" class="see-more">Ознакомиться</a>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="slide-inner">
+						<img src="img/restaurants-menu-4.jpg" alt="">
+						<div class="price">2.50 - 4 €</div>
+						<div class="day">22 ЯНВ СБ</div>
+						<h4>Якитория</h4>
+						<div class="composed">В меню: 1. Свекольный суп;  2. Строганов;  3. Компот;  4. Салат цезарь</div>
+						<div class="time">Время: 12:00 - 14:00</div>
+						<a href="" class="see-more">Ознакомиться</a>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="slide-inner">
+						<img src="img/restaurants-menu-5.jpg" alt="">
+						<div class="price">2.50 - 4 €</div>
+						<div class="day">22 ЯНВ СБ</div>
+						<h4>Якитория</h4>
+						<div class="composed">В меню: 1. Свекольный суп;  2. Строганов;  3. Компот;  4. Салат цезарь</div>
+						<div class="time">Время: 12:00 - 14:00</div>
+						<a href="" class="see-more">Ознакомиться</a>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="slide-inner">
+						<img src="img/restaurants-menu-3.jpg" alt="">
+						<div class="price">2.50 - 4 €</div>
+						<div class="day">22 ЯНВ СБ</div>
+						<h4>Якитория</h4>
+						<div class="composed">В меню: 1. Свекольный суп;  2. Строганов;  3. Компот;  4. Салат цезарь</div>
+						<div class="time">Время: 12:00 - 14:00</div>
+						<a href="" class="see-more">Ознакомиться</a>
+					</div>
+				</div>
+			</div>
+			<img class="pp2" src="img/arrow-left.png" alt="" />
+			<img class="nn2" src="img/arrow-right2.png" alt="" />
+			<div class="show-more-order">
+				<a href="#" class="show-all">
+					<i class="fa fa-chevron-down"></i>
+					ПОКАЗАТЬ ВСЕ
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="testimonials">
+		<div class="container">
+			<h3><a href="">КНИГА ЖАЛОБ И ПРЕДЛОЖЕНИЙ</a></h3>
+			<div class="row testimonials-slider">
+				<div class="col-lg-6">
+					<div class="row">
+						<div class="col-md-4">
+							<img src="img/client-1.jpg" alt="">
+							<div class="name">Константин Константинополов </div>
+							<span class="who">Младший критик</span>
+						</div>
+						<div class="col-md-8">
+							<div class="info-block">
+								<p>Более гостеприимного персонала,чем в кафе "Одесса", Вы не встретите ни в одном ресторане города! В этом я убедилась уже не единожды. При входе вам откроет двери калоритно одетый швейцар, где Вас сразу встретит приятной внешности хостесс, и любезно проводит к столу или же предложит подождать свободного места в "Зале ожидания" :) Делее Вас не перестанут удивлять официанты...</p>
+								<div class="wrapper">
+									<a href="" class="read-all">Читать полностью </a>
+									<div class="evaluation">
+										<a href="" class="good">502</a>
+										<a href="" class="bad">32</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="row">
+						<div class="col-md-4">
+							<img src="img/without-photo.jpg" alt="">
+							<div class="name">Константин Константинополов </div>
+							<span class="who">Младший критик</span>
+						</div>
+						<div class="col-md-8">
+							<div class="info-block">
+								<p>Более гостеприимного персонала,чем в кафе "Одесса", Вы не встретите ни в одном ресторане города! В этом я убедилась уже не единожды. При входе вам откроет двери калоритно одетый швейцар, где Вас сразу встретит приятной внешности хостесс, и любезно проводит к столу или же предложит подождать свободного места в "Зале ожидания" :) Делее Вас не перестанут удивлять официанты...</p>
+								<div class="wrapper">
+									<a href="" class="read-all">Читать полностью </a>
+									<div class="evaluation">
+										<a href="" class="good">502</a>
+										<a href="" class="bad">32</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="row">
+						<div class="col-md-4">
+							<img src="img/client-1.jpg" alt="">
+							<div class="name">Константин Константинополов </div>
+							<span class="who">Младший критик</span>
+						</div>
+						<div class="col-md-8">
+							<div class="info-block">
+								<p>Более гостеприимного персонала,чем в кафе "Одесса", Вы не встретите ни в одном ресторане города! В этом я убедилась уже не единожды. При входе вам откроет двери калоритно одетый швейцар, где Вас сразу встретит приятной внешности хостесс, и любезно проводит к столу или же предложит подождать свободного места в "Зале ожидания" :) Делее Вас не перестанут удивлять официанты...</p>
+								<div class="wrapper">
+									<a href="" class="read-all">Читать полностью </a>
+									<div class="evaluation">
+										<a href="" class="good">502</a>
+										<a href="" class="bad">32</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="row">
+						<div class="col-md-4">
+							<img src="img/without-photo.jpg" alt="">
+							<div class="name">Константин Константинополов </div>
+							<span class="who">Младший критик</span>
+						</div>
+						<div class="col-md-8">
+							<div class="info-block">
+								<p>Более гостеприимного персонала,чем в кафе "Одесса", Вы не встретите ни в одном ресторане города! В этом я убедилась уже не единожды. При входе вам откроет двери калоритно одетый швейцар, где Вас сразу встретит приятной внешности хостесс, и любезно проводит к столу или же предложит подождать свободного места в "Зале ожидания" :) Делее Вас не перестанут удивлять официанты...</p>
+								<div class="wrapper">
+									<a href="" class="read-all">Читать полностью </a>
+									<div class="evaluation">
+										<a href="" class="good">502</a>
+										<a href="" class="bad">32</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<img class="pp3" src="img/arrow-left.png" alt="" />
+			<img class="nn3" src="img/arrow-right2.png" alt="" />
+		</div>
+	</section>
+
+	<footer>
+		<div class="top-menu">
+			<div class="container">
+				<div class="row">
+					<div class="w54">
+						<div class="portal">
+							<div class="title no-underline"><strong>О ПОРТАЛЕ GETRESTO</strong></div>
+							<span class="visible-xs menu-button">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</span>
+							<div class="menu-list">
+								<ul class="first-list">
+									<li><a href="">О нас</a></li>
+									<li><a href="">Пользователю</a></li>
+									<li><a href="">Реcторану</a></li>
+									<li><a href="">Пользовательское соглашение</a></li>
+									<li><a href="">Оферта</a></li>
+									<li><a href="">Карта сайта</a></li>
+								</ul>
+								<ul class="secont-list">
+									<li><a href="">Рестораны</a></li>
+									<li><a href="">Доставка еды</a></li>
+									<li><a href="">Спецпредложения</a></li>
+									<li><a href="">Обеды</a></li>
+									<li><a href="">Книга жалоб и предложений</a></li>
+									<li><a href="">Блюдо от шеф повара</a></li>
+									<li><a href="">ТОП ресторанов</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="w26">
+						<div class="bonus">
+							<div class="title" ><strong>БОНУСЫ</strong></div>
+							<span>Получите свои бонусы за бронирование столика и заказа еды прямо сейчас!</span>
+							<a href="">Каталог бонусов</a>
+						</div>
+					</div>
+					<div class="w20">
+						<div class="application">
+							<div class="title"><strong>НАШИ ПРИЛОЖЕНИЯ</strong></div>
+							<a href="" class="iphone">Скачать на iPhone</a>
+							<a href="" class="android">Скачать на Android</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="network clearfix">
+							<span>МЫ В СОЦ. СЕТЯХ:</span>
+							<ul class="soc-btns">
+								<li><a href=""></a></li>
+								<li><a href=""></a></li>
+								<li><a href=""></a></li>
+								<li><a href=""></a></li>
+							</ul>
+						</div>
+						<div class="logo-side clearfix">
+							<a href="" class="logo">
+								<img src="img/logo.png" alt="">
+							</a>
+							<span>© 2011-2016 ВСЕ ПРАВА ЗАЩИЩЕНЫ</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	
+	<div class="registr-modal">
+		<div class="modal fade" id="reg_Modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1>Регистрация</h1>
+						<img class="close-m" src="img/close-modal.png" alt="" data-dismiss="modal">
+					</div>
+					<div class="modal-body">
+						<div class="fst-bgc">
+							<div class="btn-block">
+								<button class="btn for-user">Для пользователя</button>
+								<button class="btn for-restaurant">Для ресторана</button>
+							</div>
+							<div class="social">
+								<span>Войти через:</span>
+								<ul class="soc-btns clearfix">
+									<li><a href=""></a></li>
+									<li><a href=""></a></li>
+									<li><a href=""></a></li>
+									<li><a href=""></a></li>
+								</ul>
+							</div>
+							<div class="form-block">
+								<form action="">
+									<div class="item">
+										<label for="">Ваш логин:</label>
+										<input type="text" placeholder="Введите свой логин">
+									</div>
+									<div class="item">
+										<label for="">Ваше имя:</label>
+										<input type="text" placeholder="Введите свое имя">
+									</div>
+									<div class="item">
+										<label for="">Ваш пароль:</label>
+										<input type="text" placeholder="************">
+									</div>
+									<div class="item">
+										<label for="">Повторите пароль:</label>
+										<input type="text" placeholder="************">
+									</div>
+									<div class="item">
+										<label for="">E-Mail:</label>
+										<input type="text" placeholder="Введите свой e-mail">
+									</div>
+									<div class="item clearfix">
+										<label for="">Страна:</label>
+										<div class="country">
+											<div class="find-country">
+												<p class="select-title-country"><span>Выберите страну</span> <img src="img/caret-select.png" alt="" class="caret-icon"></p>
+												<div class="scroll">
+													<ul>
+														<li>Россия</li>
+														<li>Украина</li>
+														<li>Польша</li>
+														<li>Италия </li>
+														<li>Испания</li>
+														<li>США</li>
+														<li>Словакия</li>
+														<li>Венгрия</li>
+														<li>Япония</li>
+														<li>Китай</li>
+														<li>Швеция</li>
+														<li>Хорватия</li>
+														<li>Турция</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+									<div class="item clearfix">
+										<label for="">Ваш город:</label>
+										<div class="city">
+											<div class="find-country">
+												<p class="select-title-city"><span>Выберите город</span> <img src="img/caret-select.png" alt="" class="caret-icon"></p>
+												<div class="scroll">
+													<ul>
+														<li>Москва</li>
+														<li>Киев</li>
+														<li>Варшава</li>
+														<li>Рим </li>
+														<li>Мадрид</li>
+														<li>Вашингтон</li>
+														<li>Братислава</li>
+														<li>Будапешт</li>
+														<li>Токио</li>
+														<li>Пекин</li>
+														<li>Стокгольм</li>
+														<li>Загреб</li>
+														<li>Стамбул</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+									<div class="item">
+										<label for="">Телефон:</label>
+										<input type="text" placeholder="Введите свой телефон">
+									</div>
+									<div class="item promo">
+										<label for="">Промо-код:</label>
+										<img src="img/promo-questions.png" alt="">
+										<span class="tooltiptext">При наличии промо-кода введите его и получите бонусы! <br>(Это поле не является обязательным для заполнения)</span>
+										<input type="text">
+									</div>
+									<div class="item conditions clearfix">
+										<label for="conditions">Принимаю условия:
+											<input id="conditions" type="checkbox">
+											<span></span>
+										</label>
+										<a href="" class="propositions">Пользовательского соглашения</a>
+									</div>
+									
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button class="btn-reg" type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="registr-modal enter-modal">
+		<div class="modal fade" id="enter_Modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1>Вход</h1>
+						<img class="close-m" src="img/close-modal.png" alt="" data-dismiss="modal">
+					</div>
+					<div class="modal-body">
+						<div class="fst-bgc">
+							<div class="form-block">
+								<form action="">
+									<div class="item">
+										<label for="">Логин:</label>
+										<input type="text" placeholder="Введите свой логин">
+									</div>
+									<div class="item">
+										<label for="">Пароль:</label>
+										<input type="text" placeholder="Введите свой пароль">
+									</div>
+									<div class="forgot-pass clearfix">
+										<a href="#" class="btn_enter">Вход</a>
+										<a href="#" class="forget-pass">Забыли пароль?</a>
+									</div>
+								</form>
+							</div>
+							
+						</div>
+					</div>
+					<div class="modal-footer">
+						<div class="social clearfix">
+							<span>Войти через:</span>
+							<ul class="soc-btns clearfix">
+								<li><a href=""></a></li>
+								<li><a href=""></a></li>
+								<li><a href=""></a></li>
+								<li><a href=""></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="js/jquery.introLoader.pack.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

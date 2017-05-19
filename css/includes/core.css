@@ -1,0 +1,45 @@
+.title {
+  margin-bottom: 45px;
+}
+.title strong {
+  color: #fff;
+  font-size: 18px;
+  position: relative;
+}
+.title strong:after {
+  content: '';
+  display: block;
+  width: 92px;
+  height: 3px;
+  position: absolute;
+  background: #b5bfce;
+  left: 0;
+  bottom: -9px;
+}
+.soc-btns {
+  float: right;
+}
+.soc-btns li {
+  display: inline-block;
+}
+.soc-btns li:first-child a {
+  background: url('../img/facebook.png') no-repeat center center;
+}
+.soc-btns li:nth-child(2) a {
+  background: url('../img/twitter.png') no-repeat center center;
+}
+.soc-btns li:nth-child(3) a {
+  background: url('../img/vkontakte.png') no-repeat center center;
+}
+.soc-btns li:nth-child(4) a {
+  background: url('../img/google.png') no-repeat center center;
+}
+.soc-btns li a {
+  text-decoration: none;
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+.soc-btns li a:hover {
+  opacity: 0.85;
+}

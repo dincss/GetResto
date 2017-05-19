@@ -1,0 +1,377 @@
+@media (min-width: 320px) and (max-width: 767px) {
+  h3 {
+    font-size: 20px;
+  }
+  .testimonials h3 {
+    font-size: 20px;
+    margin-left: 0;
+    font-weight: 300;
+  }
+  header .top-header {
+    height: 75px;
+  }
+  .logo {
+    max-width: 140px;
+    width: 100%;
+    display: block;
+    margin: 20px auto 0 auto;
+  }
+  .main-content {
+    margin-bottom: 20px;
+  }
+  .language {
+    width: 40px;
+    margin-top: 30px;
+  }
+  .main-lang > img {
+    width: 20px;
+  }
+  .registr-hidden {
+    width: 20px;
+    margin-right: 10px;
+    padding-top: 30px;
+  }
+  .main-content {
+    padding-bottom: 3.75em;
+    font-size: 12px;
+  }
+  .main-content h1 {
+    line-height: 25px;
+    font-size: 25px;
+  }
+  .find-country {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  .select-place h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .find-country .scroll {
+    max-width: 66%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+  }
+  .title {
+    text-align: center;
+  }
+  .title strong {
+    font-size: 16px;
+  }
+  .title strong:after {
+    width: 120%;
+    left: -10%;
+  }
+  .title.no-underline strong:after {
+    display: none;
+  }
+  footer .top-menu .w54,
+  footer .top-menu .w26,
+  footer .top-menu .w20 {
+    width: 100%;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  footer .top-menu .portal .menu-list {
+    background: #000;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin-top: -30px;
+    padding: 20px;
+    transform: rotateX(90deg);
+    transform-origin: 100% 0;
+    transition: all .5s;
+  }
+  footer .top-menu .portal .menu-list .first-list {
+    margin-right: 0;
+  }
+  footer .top-menu .portal .menu-list .first-list,
+  footer .top-menu .portal .menu-list .secont-list {
+    width: 50%;
+    float: left;
+    padding-left: 20px;
+  }
+  footer .top-menu .portal .menu-list .first-list li,
+  footer .top-menu .portal .menu-list .secont-list li {
+    text-align: left;
+  }
+  footer .top-menu .portal .menu-list .first-list a:hover,
+  footer .top-menu .portal .menu-list .secont-list a:hover {
+    text-decoration: none;
+  }
+  footer .top-menu .portal .menu-list.open {
+    transform: rotateX(0deg) perspective(200px);
+  }
+  footer .top-menu {
+    position: relative;
+  }
+  footer .portal .menu-button {
+    display: inline-block;
+    background: #000;
+    padding: 13px 9px;
+    position: absolute;
+    right: 20px;
+    top: 45px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    transition: all .5s;
+  }
+  footer .portal .menu-button .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background: #fff;
+    margin-bottom: 5px;
+  }
+  footer .portal .menu-button .icon-bar:last-child {
+    margin-bottom: 0;
+  }
+  footer .portal .menu-button.open {
+    border-bottom: 1px solid #000;
+    z-index: 11;
+  }
+  footer .top-menu .bonus a {
+    max-width: 199px;
+    width: 100%;
+    display: block;
+    margin: 0 auto 30px auto;
+  }
+  footer .top-menu .application {
+    margin-left: 0;
+  }
+  footer .top-menu .application a {
+    width: 173px;
+    margin: 0 auto;
+  }
+  footer .menu-bottom .network {
+    float: none;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  footer .menu-bottom .network span {
+    font-size: 14px;
+  }
+  footer .menu-bottom .network ul {
+    float: none;
+    display: inline-block;
+  }
+  footer .menu-bottom .logo-side {
+    float: none;
+  }
+  footer .menu-bottom .logo-side .logo {
+    text-align: center;
+    display: block;
+    margin: 10px auto 0 auto;
+  }
+  footer .menu-bottom .logo-side .logo img {
+    max-width: 140px;
+    width: 100%;
+  }
+  footer .menu-bottom .logo-side span {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .catalogs {
+    background: url('../img/stock-banner-320.png') no-repeat center center;
+    background-size: cover;
+    background-position: 0 0;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+  .catalogs h2 {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+  .catalogs a {
+    background: #E93131;
+  }
+  .catalogs a:hover {
+    opacity: .85;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-navigation ul li a {
+    font-size: 10px;
+  }
+  .main-navigation ul li {
+    padding: 0px 5px;
+  }
+  .find-country {
+    max-width: 100%;
+  }
+  .select-place h3 {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .find-country .scroll {
+    max-width: 92%;
+  }
+  .entry {
+    margin-left: 10px !important;
+  }
+  .step-block .container {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+  }
+  .step-block p {
+    font-size: 16px;
+  }
+  p.select-title,
+  p.select-title-time {
+    background: #fff;
+    width: 167px;
+    height: 42px;
+    overflow: hidden;
+  }
+  .choose-rest input[type="text"] {
+    width: 167px;
+  }
+  .choose-rest .time .scroll,
+  .choose-rest .people .scroll {
+    max-width: 167px;
+  }
+  .choose-kitchen {
+    width: 165px;
+  }
+  .step2-block p {
+    font-size: 14px;
+  }
+  .step2-block span {
+    display: block;
+  }
+  .step2-block .step-inner {
+    padding-right: 10px;
+  }
+  .step2-block .howItWorks h3 {
+    font-size: 14px;
+  }
+  .step2-block p {
+    font-size: 10px;
+  }
+  .step2-block .howItWorks h3 {
+    font-size: 10px;
+  }
+  .step2-block h3 {
+    font-size: 24px;
+  }
+  footer .top-menu .portal .menu-list .first-list,
+  footer .top-menu .portal .menu-list .second-list {
+    max-width: 130px;
+    width: 100%;
+  }
+  footer .top-menu .portal .menu-list .first-list {
+    margin-right: 5px;
+  }
+  footer .top-menu .application {
+    margin-left: 25px;
+  }
+  footer .menu-bottom .network span {
+    font-size: 14px;
+  }
+  footer .menu-bottom .logo-side span {
+    font-size: 12px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-navigation ul li a {
+    font-size: 10px;
+  }
+  p.select-title,
+  p.select-title-time {
+    background: #fff;
+    width: 215px;
+    height: 42px;
+    overflow: hidden;
+    position: relative;
+  }
+  .hd {
+    width: 167px;
+    height: 42px;
+    overflow: hidden;
+  }
+  .choose-rest input[type="text"] {
+    width: 215px;
+  }
+  .choose-rest .time .scroll,
+  .choose-rest .people .scroll {
+    max-width: 215px;
+  }
+  .choose-kitchen {
+    width: 185px;
+  }
+  .step2-block p {
+    font-size: 14px;
+  }
+  .step2-block span {
+    display: block;
+  }
+  .step2-block .step-inner {
+    padding-right: 10px;
+  }
+  .step2-block .howItWorks h3 {
+    font-size: 14px;
+  }
+  .expand-pick-kitchen .popup {
+    overflow: scroll;
+  }
+  footer .top-menu .portal .menu-list .first-list {
+    margin-right: 5px;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1300px) {
+  .food-in-office > .container {
+    max-width: 1000px;
+  }
+  .food-in-office .pp2 {
+    top: 80px;
+  }
+  .food-in-office .nn2 {
+    top: 80px;
+  }
+}
+@media (min-width: 900px) and (max-width: 1100px) {
+  .food-in-office > .container {
+    max-width: 800px;
+  }
+  .food-in-office .pp2 {
+    top: 50px;
+  }
+  .food-in-office .nn2 {
+    top: 50px;
+  }
+}
+@media (min-width: 755px) and (max-width: 900px) {
+  .food-in-office > .container {
+    max-width: 650px;
+  }
+  .food-in-office .pp2 {
+    top: 80px;
+  }
+  .food-in-office .nn2 {
+    top: 80px;
+  }
+}
+@media (min-width: 320px) and (max-width: 755px) {
+  .food-in-office > .container {
+    max-width: 100%;
+  }
+  .food-in-office .pp2 {
+    display: none !important;
+  }
+  .food-in-office .nn2 {
+    display: none !important;
+  }
+}
